@@ -1,0 +1,170 @@
+#ornamento1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    rotate: 90deg;
+}
+
+#ornamento2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    rotate: -90deg;
+}
+
+#decoflor0{
+    position: absolute;
+    left: -80px;
+    top: -100px;
+    rotate: -30deg;
+}
+
+#planta1{
+    position: absolute;
+    left: -10%;
+    top: 20%;
+    rotate: -20deg;
+}
+
+#planta2{
+    position: absolute;
+    right: -10%;
+    top: 20%;
+    rotate: 20deg;
+    transform: scaleX(-1);
+}
+
+#flor1 {
+    position: absolute;
+    right: 0;
+    bottom: 55%;
+}
+
+#flor2 {
+    position: absolute;
+    left: 0;
+    bottom: 55%;
+}
+
+#flor1-1 {
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+}
+
+#flor2-1 {
+    position: absolute;
+    right: 10%;
+    bottom: 30%;
+}
+
+#flor1-2 {
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+}
+
+#flor2-2 {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+#decoflor1{
+    position: absolute;
+    left: 4%;
+    bottom: 6%;
+}
+#decoflor2{
+    position: absolute;
+    right: 4%;
+    bottom: 6%;
+    transform: scaleX(-1);
+}
+
+#flor0-1{
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+}
+#flor0-2{
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+.ornamentoVertical1-1{
+    position: absolute;
+    left: 3%;
+    bottom: -12%;
+}
+.ornamentoVertical1-2{
+    position: absolute;
+    left: 3%;
+    top: -10%;
+    rotate: 180deg;
+}
+
+.ornamentoVertical2-1{
+    position: absolute;
+    right: 3%;
+    bottom: -12%;
+    transform: scaleX(-1);
+}
+.ornamentoVertical2-2{
+    position: absolute;
+    right: 3%;
+    top: -10%;
+    rotate: 180deg;
+    transform: scaleX(-1);
+}
+
+.decoflor3-1{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+}
+
+.decoflor3-2{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    transform: scaleX(-1);
+}
+
+.despedida1-1{
+    position: absolute;
+    left: 0%;
+    bottom: -5%;
+    rotate: -15deg;
+}
+
+.despedida1-2{
+    position: absolute;
+    right: 0%;
+    bottom: -5%;
+    transform: scaleX(-1);
+    rotate: 15deg;
+}
+
+.despedida2-1{
+    position: absolute;
+    left: 20%;
+    bottom: 18%;
+    rotate: 5deg;
+}
+
+.despedida2-2{
+    position: absolute;
+    right: 20%;
+    bottom: 18%;
+    transform: scaleX(-1);
+    rotate: -5deg;
+}
+
+#decoflor4{
+    position: absolute;
+    right: -80px;
+    bottom: -100px;
+    rotate: 150deg;
+}

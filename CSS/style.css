@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital@0;1&display=swap');
+
+* {
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+    will-change: opacity, transform;
+}
+
+.fade-in-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body {
+    animation: fadeIn 1.5s ease-in-out;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('../IMG/textura.jpg');
+    background-repeat: repeat;
+    opacity: 0.7;
+}
+
+html {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #5e5e5e;
+    letter-spacing: 2px;
+    line-height: 1.4;
+}
+
+h1 {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13rem;
+    text-align: center;
+    color: #d8a7a0;
+    padding-top: 30px;
+    padding-right: 30px;
+    letter-spacing: 0px;
+    line-height: 1;
+}
+
+h2 {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+    text-align: center;
+    /*
+    background: linear-gradient(135deg, #bf953f, #c4bc63, #b38728, #ccc058, #aa771c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    */
+    color: #000000;
+    padding-top: 30px;
+    padding-right: 30px;
+    letter-spacing: 0px;
+    line-height: 1;
+}
+
+.contenedor {
+    width: 700px;
+    height: 1200px;
+    cursor: pointer;
+    border: solid 2px #d8a7a0;
+    margin: 20px auto;
+    border-radius: 20px;
+    position: relative;
+    padding: 40px 20px;
+}
+
+.abrir-inv {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.txt-cordial {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25%;
+    width: 80%;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.abrir-flor {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 37%;
+}
+
+.txt-abrir {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60%;
+    width: 80%;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.abierto {
+    display: none;
+}
+
+.partes {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+#subtitle {
+    position: absolute;
+    font-size: 4rem;
+    font-family: "Great Vibes", cursive;
+    left: 56%;
+    top: 0;
+}
+
+.parte1 span {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.foto {
+    height: 800px;
+    width: 600px;
+    background-image: url('../IMG/img5.jpeg');
+    background-size: 140%;
+    background-position-x: -65px;
+    background-position-y: -30px;
+    margin: 50px 0;
+    border-radius: 50%;
+    border: solid 2px #d8a7a0;
+    z-index: 2;
+}
+
+.parte2 span {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0 60px;
+    letter-spacing: 2px;
+    line-height: 1.4;
+}
+
+.parte3 {
+    margin-bottom: 30px;
+}
+
+.parte3 span {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0 60px;
+    margin-top: 30px;
+}
+
+.parte4 span {
+    text-align: center;
+    font-size: 5rem;
+    padding: 0 60px;
+    margin-top: 30px;
+    color: #d8a7a0;
+}
+
+.btn-agendar {
+    margin-top: 50px;
+    color: #fafafa;
+    background-color: #5e5e5e;
+    padding: 15px 40px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    border-radius: 20px;
+    transition: .5s;
+    margin-bottom: 20px
+}
+
+.btn-agendar:hover {
+    background-color: #d8a7a0;
+}
+
+#lugar {
+    font-size: 3rem;
+    margin-top: 30px;
+}
+
+#hora {
+    margin-top: 20px;
+    font-size: 3rem;
+}
+
+
+.contenedor-contador {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.titulo-contador {
+    font-family: "Great Vibes", cursive;
+    font-size: 3.5rem;
+    color: #fafafa;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.cajas-tiempo {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.caja-ovalada {
+    background-color: #5e5e5e;
+    color: #fafafa;
+    width: 100px;
+    height: 120px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-ovalada .numero {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.1;
+}
+
+.caja-ovalada .etiqueta {
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.parte5 a {
+    margin-top: 50px;
+    color: #fafafa;
+    background-color: #5e5e5e;
+    padding: 15px 40px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    border-radius: 20px;
+    transition: .5s;
+    margin-bottom: 20px
+}
+
+.parte5 a:hover {
+    background-color: #d8a7a0;
+}
+
+.evento {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hora-it {
+    font-size: 2rem;
+}
+
+.parte7 {
+    margin-bottom: 20px;
+}
+
+#vest {
+    font-size: 3.5rem;
+    margin-top: 15px;
+}
+
+#aviso {
+    font-size: 1rem;
+}
+
+#txt-sugerencia {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0 60px;
+    margin-top: 20px;
+}
+
+#buzon {
+    font-size: 2rem;
+}
+
+.img1 {
+    background-image: url('../IMG/img3.jpeg');
+    height: 850px;
+    width: 600px;
+    background-size: 100%;
+    background-position-y: -40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 5%;
+    border: solid 2px #d8a7a0;
+}
+
+.img2 {
+    background-image: url('../IMG/img1.jpeg');
+    height: 350px;
+    width: 600px;
+    background-size: 100%;
+    background-position-y: -40px;
+    margin: 50px 0;
+    border-radius: 5%;
+    border: solid 2px #d8a7a0;
+}
+
+.line {
+    width: 2px;
+    height: 35px;
+    background-color: #d8a7a0;
+}
